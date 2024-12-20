@@ -1,0 +1,112 @@
+.books {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: rgb(99, 51, 85);
+}
+
+.books .header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.books .container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr); 
+    gap: 20px;
+    justify-content: center;
+}
+
+.books .container .card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.books .container .card .img-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.books .container .card .img-left img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.books .container .card .details-right {
+    padding: 10px;
+    font-family: sans-serif;
+    color: black;
+}
+
+.books .container .card .details-right table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.books .container .card .details-right th {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #555;
+    padding: 5px 0;
+}
+
+.books .container .card .details-right th:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+/* Button Styling */
+.books .container .card .details-right button {
+    background-color: burlywood;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin: 5px 5px 5px 0; /* Adjust spacing for inline buttons */
+    display: inline-block;
+}
+
+/* Read More Button */
+.books .container .card .details-right button:nth-child(1) {
+    background-color: #0056b3;
+    color: white;
+}
+
+.books .container .card .details-right button:nth-child(1):hover {
+    background-color: #003f7f;
+}
+
+/* Delete Button */
+.books .container .card .details-right button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+}
+
+.books .container .card .details-right button:nth-child(2):hover {
+    background-color: #b02a37;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .books .container {
+        grid-template-columns: 1fr; 
+    }
+
+    .books .container .card {
+        grid-template-columns: 1fr; 
+    }
+
+    .books .container .card .img-left img {
+        max-width: 150px;
+    }
+}

@@ -1,0 +1,85 @@
+
+.readBook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #679ab3, #78a2ba);
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  .card {
+    display: flex;
+    width: 75%;
+    height: 75%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color:rgb(166, 33, 166);
+    border: 1px solid #1d1717;
+  }
+  
+ 
+  .img-leftfix {
+    flex: 1;
+    background-color: #6fa4a7;
+    position: relative;
+  }
+  
+  .img-leftfix img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+  }
+  
+  
+  .content-leftscroll {
+    flex: 2;
+    overflow-y: auto;
+    padding: 25px;
+    background-color: rgb(221, 212, 212);
+    color:white;
+    line-height: 1.6;
+  }
+  
+  
+  .content-leftscroll h1 {
+    font-size: 10px;
+    margin-bottom: 15px;
+    color: #444;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+  
+  .content-leftscroll h1 span {
+    font-weight: bold;
+    color: black;
+    margin-right: 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .img-leftfix {
+      width: 100%;
+      height: 200px;
+    }
+  
+    .content-leftscroll {
+      padding: 15px;
+    }
+  }
+  

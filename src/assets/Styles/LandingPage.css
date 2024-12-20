@@ -1,0 +1,67 @@
+.landingpage{
+    height: 100vh;
+    width: 100%;
+    border: none;
+    /* to avoid the horizontal scroll bar */
+    background-color: tan;
+    display: grid;
+    place-items: center;
+}
+.landingpage .login-container{
+    border: solid 1px black;
+    height: 50vh;
+    width: 40%;
+}
+
+.landingpage .header{
+    text-align: center;
+    margin: 2vh 0;
+    font-size: 40px;
+}
+.landingpage .btn-box{
+    border:solid 1px black ;
+    height: 10vh;
+    width: 20vw;
+    margin:2vh auto;
+}
+
+.landingpage .btn-box button{
+    height: 100%;
+    width: 50%;
+    border: none;
+    transition: all .5s;
+    cursor: pointer;
+    border-radius: 10vh;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px black;
+    font-size: larger;
+}
+
+.landingpage .btn-box .lft-btn{
+    margin-left: 50%;
+    
+}
+
+.landingpage .form-box{
+    padding: 2vh 0;
+}
+
+.landingpage input,.landingpage .form-box button{
+    display: block;
+    margin:2vh auto;
+
+}
+
+.landingpage input{
+    width: 80%;
+    padding: 1vh 1vw;
+}
+.landingpage .form-box button{
+    width: 25vh;
+    padding: 1vh 1vw;
+}
+
+.landingpage .form-box h2{
+    text-align: center;
+    font-family: sans-serif;
+}
